@@ -1,0 +1,1 @@
+for val in $(docker image ls | awk '{print $1$2}');do  echo "$val"; done

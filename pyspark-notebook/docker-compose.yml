@@ -1,0 +1,8 @@
+services:
+    pyspark-notebook:
+      image: desertroam/hadoop-pyspark-notebook:3.3.1-java8
+      container_name: spark-notebook
+      volumes:
+        - ../pynotebooks:/pynotebooks
+      ports:
+        - "8000:8888"
